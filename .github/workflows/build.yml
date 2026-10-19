@@ -24,5 +24,6 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
+          retention-days: 1
           name: Artifacts
           path: build/libs/*-release.jar
